@@ -50,26 +50,18 @@ credit_scores = [720, 680, 590, 610, 750]
 # and approve the rest for credit
 for applicant, score in zip(applicants_for_credit, credit_scores):
     # zip function combines two lists into pairs
-    
+
     if score < 600:
         continue
     print(applicant + "approved for credit with score: " + str(score))
 
 
-
-
-
-
-
-
-
-
-
 # Challenge:
 # Use a for loop and range to print each subject along with its index:
 # Example output: "Subject 0: Math"
-for i in range(len(subjects)):
-    print(f"Subject {i}: {subjects[i]}")
+for index in range(len(subjects)):
+    # you have to use -1 because range starts at 0
+    print("Subject " + str(index) + ": " + subjects[index])
 
 # Given:
 numbers = [5, 10, 15, 20]
@@ -78,10 +70,23 @@ numbers = [5, 10, 15, 20]
 # Use a for loop to add all the numbers and print the total.
 total = 0
 for number in numbers:
+    # add each  number to total
     total += number
-print(total)
+    # shorthand for total = total + number
+print("total: " ,total)
 # first time total = 0
 # second time total = 0 + 5
 # third time total = 5 + 10
 # fourth time total = 15 + 15
 # fifth time total = 30 + 20 
+
+
+new_numbers = list(range(1, 260001))
+# this creates a list of numbers from 1 to 260
+# challenge: sum up all the numbers from 1 to 260
+# and print the total
+
+total = 0
+for number in new_numbers: 
+    total += number
+print("Total sum from 1 to 26000: ", total)
