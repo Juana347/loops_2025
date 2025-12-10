@@ -40,6 +40,31 @@ for number in list1000:
         continue
     print(number)
 
+
+
+applicants_for_credit = ["Alice", "Bob", "Charlie", "David", "Eve"]
+credit_scores = [720, 680, 590, 610, 750]
+# zip the two lists together and print
+#  each applicants name along with their credit score.
+# if the score is below 600, skip over that applicant.
+# and approve the rest for credit
+for applicant, score in zip(applicants_for_credit, credit_scores):
+    # zip function combines two lists into pairs
+    
+    if score < 600:
+        continue
+    print(applicant + "approved for credit with score: " + str(score))
+
+
+
+
+
+
+
+
+
+
+
 # Challenge:
 # Use a for loop and range to print each subject along with its index:
 # Example output: "Subject 0: Math"
