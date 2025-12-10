@@ -56,4 +56,10 @@ while index < len(colors):
     if colors[index] == "yellow":
         break
     print(colors[index])
-    index += 1 # increments the index to avoid infinite loops
+    index += 1 
+    # index += 1 is shorthand for index = index + 1
+# increments the index to avoid infinite loops
+# Explanation:
+# we start with index 0 (first color)
+# While index is less than length of colors (5)
+# Check if color at current index is yellow
