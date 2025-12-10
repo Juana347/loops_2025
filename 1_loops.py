@@ -2,6 +2,7 @@
 # Given this list of fruits:
 fruits = ["apple", "banana", "cherry", "date"]
 
+print(len(fruits))
 # Challenge:
 # Use a for loop to print each fruit on a new line.
 print(fruits[0])
@@ -17,19 +18,27 @@ for subject in subjects:
     print(subject)
 
 # print out each subject but stop when you reach "History"
-for x in (subjects):
-    if x == "History":
+for subject in subjects:
+    if subject == "History":
         break
-    else:
-        print(x)
+    print(subject)
 
 # skips over "Science"
-for x in (subjects):
-    if x == "Science":
+for subject in subjects:
+    if subject == "Science":
         continue
-    else:
-        print(x)
+    print(subject)
 
+list1000 = list(range(1, 1001))
+for number in list1000:
+    if number > 599:
+        break
+    print(number)
+
+for number in list1000:
+    if 300 <= number <= 500:
+        continue
+    print(number)
 
 # Challenge:
 # Use a for loop and range to print each subject along with its index:
